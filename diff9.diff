@@ -1,0 +1,8 @@
+diff --git a/t7 b/t7
+index e1af93c1f5e94ee3a1980877d64b729be1b35c2e..1029dee76701dcf863ba231956fb4f883ccc3ea3 100644
+--- a/t7
++++ b/t7
+@@ -1,2 +1,2 @@
++This line has been added
+ This line should be kept
+-This line should be deleted
