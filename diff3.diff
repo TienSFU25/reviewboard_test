@@ -1,0 +1,9 @@
+diff --git a/t6 b/t6
+index 52e034e6e9a82a38bda7707b39eb715751b900d7..1 100644
+--- a/t6
++++ b/t6
+@@ -1,2 +1,3 @@
+-This should be deleted
+ random junk
++This was added
++This was added too
