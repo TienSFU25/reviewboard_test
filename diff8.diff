@@ -1,0 +1,8 @@
+diff --git a/t1 b/t1
+index 9183ef69a7894154616ca66292d9d1c8949c3f56..997c8fe9e19f2ff0b24b3f1009778b91db9e39b7 100644
+--- a/t1
++++ b/t1
+@@ -1,2 +1,2 @@
+-This line should be gone
++This line was added
+ This line should be kept

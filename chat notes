@@ -1,0 +1,53 @@
+Barret Rennie [1:39 PM] 
+ah ok.
+
+Barret Rennie [1:40 PM]
+So the iter_entry_points is called on 'reviewboard.hosting_services'
+
+Barret Rennie [1:40 PM]
+so in a python package you are allowed to define entrypoints, which have some naming convention and point to a class/method
+
+Barret Rennie [1:41 PM]
+the `entry.name` and `entry.load` come from `iter_entry_points`, which yields the name and entry point registered in packages
+
+Barret Rennie [1:43 PM]
+the entry points stuff is all defined in `pkg_resources` and im not quite sure where the entry points are defined
+
+Barret Rennie [1:43 PM]
+these may just be for third party entry points defined in extensions
+
+Barret Rennie [1:44 PM]
+I lied there is an `entry_points.txt`
+
+Barret Rennie [1:44 PM]
+its in the ReviewBoard.egg-info dir, and I dont know a lot about python packaging
+
+Barret Rennie [1:45 PM]
+@vtl-developer: if you look at the file it shows "name = entrypoint" I believe
+
+Barret Rennie [1:46 PM]
+bbiab
+
+Vincent Le [1:48 PM] 
+ohhh I see! Thanks!
+
+David Trowbridge [1:50 PM] 
+individual packages all define them in their setup.py files
+
+David Trowbridge [1:50 PM]
+so if you look at reviewboard's setup.py, you'll see a big list of all the entry points it provides
+
+Vincent Le [1:51 PM] 
+so in the setup.py, it makes a file of the entry points, and `iter_entry_points` goes through the file?
+
+David Trowbridge [1:52 PM] 
+yeah, kind of. `iter_entry_points` will look at *all* installed python packages
+
+David Trowbridge [1:52 PM]
+So other third parties can define entry points for `reviewboard.hosting_services` and reviewboard will automatically find them
+
+Vincent Le [1:54 PM] 
+so if i make packages and want them to be part of the default reviewboard setup, i should also add them to the setup.py?
+
+David Trowbridge [1:56 PM] 
+yeah, so if you had a dropbox implementation, you'd have something like `'reviewboard.file_providers': ['dropbox = ...']`

@@ -1,0 +1,23 @@
+(reviewboard)tiens-MacBook-Air:reviewboard_test tien$ cat /var/folders/tk/kjczrb_15wz__jtddz1jfd7r0000gn/T/reviewboard.a14Z7V/tmpP3lsMb-new
+Random text for t2
+(reviewboard)tiens-MacBook-Air:reviewboard_test tien$ cat /var/folders/tk/kjczrb_15wz__jtddz1jfd7r0000gn/T/reviewboard.a14Z7V/tmpP3lsMb
+Random text for t2
+(reviewboard)tiens-MacBook-Air:reviewboard_test tien$ cat /var/folders/tk/kjczrb_15wz__jtddz1jfd7r0000gn/T/reviewboard.a14Z7V/tmpP3lsMb-new.rej 
+***************
+*** 1,2 ****
+- Random text for t2
+  random junk
+--- 1,3 ----
+  random junk
++ This was added
++ This was added too
+(reviewboard)tiens-MacBook-Air:reviewboard_test tien$ cat /var/folders/tk/kjczrb_15wz__jtddz1jfd7r0000gn/T/reviewboard.a14Z7V/t2.diff 
+diff --git a/t2 b/t2
+index f6762c35cc8188f0dc595e7638706994b29064d4..1 100644
+--- a/t2
++++ b/t2
+@@ -1,2 +1,3 @@
+-Random text for t2
+ random junk
++This was added
++This was added too
