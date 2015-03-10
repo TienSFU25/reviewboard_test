@@ -1,9 +1,9 @@
 REVIEWBOARD_URL = "http://localhost:8080"
 GUESS_FIELDS = True
-#REPOSITORY = "testrepo"
-REPOSITORY = "gitwebby"
+REPOSITORY = "testrepo"
+#REPOSITORY = "gitwebby"
 BRANCH = "master"
-TEMPLATES_DIR  = "templates"
+TEMPLATES_DIRy  = "templates"
 DEFAULT_TEMPLATE = """
 This is the template in .reviewboardrc
 {{nonexistant}}
