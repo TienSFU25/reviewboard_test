@@ -3,7 +3,7 @@ GUESS_FIELDS = True
 REPOSITORY = "testrepo"
 #REPOSITORY = "gitwebby"
 BRANCH = "master"
-TEMPLATES_DIRy  = "templates"
+TEMPLATES_DIR  = "templates"
 DEFAULT_TEMPLATE = """
 This is the template in .reviewboardrc
 {{nonexistant}}
