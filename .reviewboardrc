@@ -1,8 +1,8 @@
 REVIEWBOARD_URL = "http://localhost:8080"
 GUESS_FIELDS = True
 #REPOSITORY = "testrepo"
-#REPOSITORY = "gitwebby"
-REPOSITORY = "404"
+REPOSITORY = "gitwebby"
+#REPOSITORY = "404"
 BRANCH = "master"
 TEMPLATES_DIR  = "templates"
 DEFAULT_TEMPLATE = """
