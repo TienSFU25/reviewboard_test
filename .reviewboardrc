@@ -5,7 +5,7 @@ REPOSITORY = "gitwebby"
 #REPOSITORY = "404"
 BRANCH = "master"
 TEMPLATES_DIR  = "templates"
-DEFAULT_TEMPLATE = """
+iDEFAULT_TEMPLATE = """
 This is the template in .reviewboardrc
 {{nonexistant}}
 {% set summary = review_request.summary %}
